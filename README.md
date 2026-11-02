@@ -45,14 +45,14 @@ remotes::install_github("Thomas1141/spatial-temporal-clustering-detection")
 
 ## 🚀 Quick Start / Usage Example
 
-Below is the standard execution workflow using the `STclust` (`spatial-temporal-clustering-detection`) package to identify spatiotemporal clusters:
+Below is the standard execution workflow using the `STclust` package to identify spatiotemporal clusters:
 
 ```R
-library(spatial.temporal.clustering.detection)
+library(STclust)
 library(sf)
 
 # 1. Access built-in spatial shapefile (or load your own sf object)
-shp_path <- system.file("extdata", "st_integrated.shp", package = "spatial-temporal-clustering-detection")
+shp_path <- system.file("extdata", "st_integrated.shp", package = "STclust")
 my_map <- sf::st_read(shp_path)
 
 # 2. Run Spatiotemporal Cluster Identification with Execution Timing

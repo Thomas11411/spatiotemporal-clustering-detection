@@ -1,0 +1,20 @@
+Package: STclust
+Type: Package
+Title: Spatiotemporal Cluster Detection and Analysis
+Version: 0.1.0
+Author: Li-Wei, Chen [aut, cre]
+Maintainer: Li-Wei, Chen <pig21411@gmail.com>
+Description: Implements mixture estimation equations (MEE) and parallelized spatial scan statistics for spatiotemporal disease cluster detection.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    MASS,
+    parallel,
+    spdep,
+    gstat,
+    ggplot2,
+    dplyr,
+    Matrix,
+    sf
+Config/roxygen2/version: 8.1.1

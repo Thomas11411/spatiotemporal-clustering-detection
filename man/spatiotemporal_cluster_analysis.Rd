@@ -8,7 +8,6 @@ spatiotemporal_cluster_analysis(
   shp.file,
   max.dist = 0.5,
   cutoff = 1.5,
-  T.cnt = 3,
   nc = 11
 )
 }
@@ -19,20 +18,18 @@ spatiotemporal_cluster_analysis(
 
 \item{cutoff}{Numeric value, spatial distance cutoff for semivariogram estimation (defaults to 1.5).}
 
-\item{T.cnt}{Numeric value, temporal trend degree (1 for intercept, 2 for linear, 3 for quadratic; defaults to 3).}
-
 \item{nc}{Integer, number of CPU cores to use for parallel computing cluster (defaults to 11).}
 }
 \value{
-A list containing the final fitted model object (\code{final.model}), 
-the final regrouped cluster indicator matrix (\code{final.clusters}), 
-the updated shapefile with cluster attributes (\code{updated.shp}), 
+A list containing the final fitted model object (\code{final.model}),
+the final regrouped cluster indicator matrix (\code{final.clusters}),
+the updated shapefile with cluster attributes (\code{updated.shp}),
 and the visualization plot object (\code{plot}).
 }
 \description{
-Executes the full spatiotemporal analysis pipeline directly from an integrated 
-shapefile containing time-series response variables, covariates, and coordinates. Automatically 
-detects time steps from the shapefile attributes, and performs null model estimation, 
-spatiotemporal correlation modeling, parallelized candidate cluster scanning, cluster 
+Executes the full spatiotemporal analysis pipeline directly from an integrated
+shapefile containing time-series response variables, covariates, and coordinates. Automatically
+detects time steps from the shapefile attributes, and performs null model estimation,
+spatiotemporal correlation modeling, parallelized candidate cluster scanning, cluster
 significance testing, and iterative cluster regrouping.
 }

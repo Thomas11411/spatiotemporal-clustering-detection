@@ -14,8 +14,7 @@ MEE(
   set.corr = NULL,
   corr.plus.inv = NULL,
   indep = FALSE,
-  sigma2 = NULL,
-  T.cnt = 3
+  sigma2 = NULL
 )
 }
 \arguments{
@@ -38,16 +37,14 @@ MEE(
 \item{indep}{Logical value indicating whether spatial and temporal independence is assumed (defaults to \code{FALSE}).}
 
 \item{sigma2}{Initial error variance value (defaults to \code{NULL}).}
-
-\item{T.cnt}{Temporal trend degree (1 for intercept, 2 for linear, 3 for quadratic; defaults to 3).}
 }
 \value{
-A list containing convergence status, iteration count, coefficient tables, standard errors, 
+A list containing convergence status, iteration count, coefficient tables, standard errors,
 sandwich covariance matrices, fitted values, residuals, SSE, residual variance, and temporal trend components.
 }
 \description{
-Fits a spatiotemporal mixture regression model for zero-inflated or mixed 
-responses (comprising zeros and continuous positive values) and evaluates cluster significance 
-by combining spatiotemporal correlation structures with cluster indicator variables via 
+Fits a spatiotemporal mixture regression model for zero-inflated or mixed
+responses (comprising zeros and continuous positive values) and evaluates cluster significance
+by combining spatiotemporal correlation structures with cluster indicator variables via
 iterative reweighted least squares (IRLS) and score derivatives.
 }

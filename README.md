@@ -85,5 +85,4 @@ print(res)
 
 If you use this package or methodology in your research, please cite the corresponding paper on mixture scan statistics for spatiotemporal cluster analysis.
 
-**Author & Maintainer:** Li-Wei, Chen (`pig21411@gmail.com`)  
-Institute of Population Health Sciences, National Health Research Institutes (NHRI), Taiwan.
+**Author & Maintainer:** Thomas Chen (GitHub: @Thomas11411)
